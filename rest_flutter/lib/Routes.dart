@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rest_flutter/Screens/Login/index.dart';
-
 import 'package:rest_flutter/Screens/Home/index.dart';
+import 'package:rest_flutter/Screens/Cadastro/index.dart';
 
 class Routes {
   Routes() {
@@ -20,6 +20,12 @@ class Routes {
           case '/home':
             return new MyCustomRoute(
               builder: (_) => new HomeScreen(),
+              settings: settings,
+            );
+          
+          case '/cadastro':
+            return new MyCustomRoute(
+              builder: (_) => new CadastroScreen(),
               settings: settings,
             );
         }

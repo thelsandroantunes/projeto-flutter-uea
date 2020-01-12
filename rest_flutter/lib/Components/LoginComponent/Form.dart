@@ -11,8 +11,8 @@ class FormContainer extends StatelessWidget {
         children: <Widget>[
           new Form(
               child: new Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
               new Text(
                 'Rest App',
                 textAlign: TextAlign.center,
@@ -20,9 +20,9 @@ class FormContainer extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24, color: Colors.white),
               ),
               new InputFieldArea(
-                hint: "Nome",
+                hint: "E-mail",
                 obscure: false,
-                icon: Icons.person_outline,
+                icon: Icons.email,
               ),
               new InputFieldArea(
                 hint: "Senha",
